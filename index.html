@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="A free, McMaster-focused platform where students find, share, and rate study materials by course code.">
+<link rel="icon" href="logo.png">
+<title>MacVault: Less time searching, more time succeeding</title>
+<link rel="stylesheet" href="style.css"></head><body id="top">
+<nav><div class="wrap"><a class="brand" href="#top"><img src="logo.png" alt="MacVault logo" width="127" height="80"><b>MacVault</b></a><div><a href="#problem">Problem</a><a href="#demo">Try it</a><a href="#plan">Mosaic link</a><a href="#how">How it works</a><a href="#trust">Trust</a><a href="#impact">Impact</a><a href="#feedback">Feedback</a></div></div></nav>
+
+<header class="hero"><div class="wrap">
+<span class="tag">GR0wth Venture Showcase · McMaster University</span>
+<h1>Less time searching,<br><em>more time succeeding.</em></h1>
+<p class="lead">A free, McMaster-focused platform where students find, share, and rate study materials, organized by course code in one place.</p>
+<a class="btn" href="#demo">Try the prototype</a><a class="btn alt" href="#how">How it works</a>
+</div></header>
+
+<section id="problem"><div class="wrap">
+<h2>Have you ever spent more time searching for study materials than studying?</h2>
+<p class="sub">Notes, practice questions, and past resources are scattered across group chats, websites, and shared folders. Studying becomes more stressful and time-consuming.</p>
+<div class="grid">
+<div class="card"><div class="ic">💬</div><h3>Scattered</h3><p>Resources live in dozens of group chats and folders that few students can see.</p></div>
+<div class="card"><div class="ic">💸</div><h3>Paid alternatives</h3><p>Public services like Studocu charge fees and aren’t built around McMaster courses.</p></div>
+<div class="card"><div class="ic">❓</div><h3>Unreliable</h3><p>Without ratings, it’s hard to know which notes are actually worth your time.</p></div>
+</div></div></section>
+
+<section id="demo"><div class="wrap">
+<h2>Prototype: the homepage</h2>
+<p class="sub">Search a course code, browse by resource type, and see top-rated materials. Unlock resources with credits, and earn credits by uploading.</p>
+<div class="demo">
+<div class="bar"><input id="q" type="search" placeholder="Search a course code, e.g. COMMERCE 1BA3" aria-label="Search course code"><span class="credits">Credits: <span id="cr">10</span></span></div>
+<div class="chips" id="chips"></div>
+<div id="list"></div>
+<div class="bar" style="margin-top:14px"><button class="btn" id="up" type="button">+ Upload a resource</button></div>
+<p class="note">Sample data for demonstration only. Higher-rated resources cost more credits; uploads earn credits.</p>
+</div></div></section>
+
+<section id="plan"><div class="wrap">
+<h2>Linked to Mosaic</h2>
+<p class="sub">Connect your Mosaic account and MacVault sees the courses you are enrolled in this term. It then suggests what to take next and links you to study resources for each course.</p>
+<div class="demo">
+<div class="bar"><button class="btn" id="pbtn" type="button">Connect to Mosaic</button>
+<select id="psel" aria-label="Student"><option value="a">First-year Commerce, Fall</option><option value="b">First-year Commerce, Winter</option></select></div>
+<p class="note" id="pstat" style="margin:0 0 10px">Not connected yet. Press the button to see suggestions for a sample student.</p>
+<div class="chips" id="taken"></div>
+<div id="sugg"></div>
+<p class="note">Prototype only: the Mosaic link is simulated with sample students. A real connection would need approval from McMaster and the MSU, and we would only read course codes, never grades or personal details. Suggestions come from a sample list of courses, so confirm prerequisites and availability in Mosaic and the Undergraduate Calendar.</p>
+</div></div></section>
+
+<section id="how"><div class="wrap">
+<h2>How it works</h2>
+<p class="sub">A credit and rating system keeps the library growing and the quality high.</p>
+<div class="steps">
+<div class="step"><div><b>Search by course</b><p>Enter a course code and see every resource for that course in one place.</p></div></div>
+<div class="step"><div><b>Upload to earn credits</b><p>The more trusted resources you upload, the more credits you gain.</p></div></div>
+<div class="step"><div><b>Rate and spend</b><p>Resources are rated 1 to 5 stars. Higher-rated materials cost more credits to unlock.</p></div></div>
+<div class="step"><div><b>Reviewed for quality</b><p>Uploads are checked by a student team and automated flagging before they join the database.</p></div></div>
+</div></div></section>
+
+<section id="trust"><div class="wrap">
+<h2>Built on trust</h2>
+<p class="sub">Peer feedback told us to plan for management, integrity, and growth. Here’s our plan.</p>
+<div class="grid">
+<div class="card"><div class="ic">🛡️</div><h3>Academic integrity</h3><p>Automated checks flag plagiarized, off-course, or confidential uploads, with a warning email to the uploader.</p></div>
+<div class="card"><div class="ic">👩‍💻</div><h3>Student-run team</h3><p>Volunteer roles for Engineering and Computer Science students, hired through a formal interview process, valuable résumé experience.</p></div>
+<div class="card"><div class="ic">🤝</div><h3>MSU and Student Success</h3><p>We plan to partner with the MSU and Student Success to promote the platform and explore opt-out funding instead of a price tag.</p></div>
+<div class="card"><div class="ic">📣</div><h3>Getting the word out</h3><p>Workshops, short videos, social media, and links from existing McMaster pages.</p></div>
+</div></div></section>
+
+<section id="impact"><div class="wrap">
+<h2>Impact and what’s next</h2>
+<p class="sub">Free access to academic resources supports UN SDG 4 (Quality Education) and SDG 10 (Reduced Inequalities).</p>
+<div class="road">
+<div><b>Now:</b> Homepage prototype, peer feedback, refined credit and rating system.</div>
+<div><b>Next:</b> Pilot with McMaster courses; research scalable AI flagging and its costs.</div>
+<div><b>Later:</b> Expand to other universities.</div>
+</div></div></section>
+
+<section id="feedback"><div class="wrap">
+<h2>Help us improve</h2>
+<div class="fb"><a class="qrimg" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=B2M3RCm0rUKMJSjNSW9HcmEwcPFiCsBOqw-l2jhh4DBURVAzSVBaUlVWME9WREtXMzg5OU1XQkRYSC4u&amp;origin=QRCode" target="_blank" rel="noopener"><img src="form-qr.png" alt="QR code for the MacVault feedback form" width="160" height="160"></a>
+<div><p class="sub" style="margin:0">Scan the code with your phone to open our short Microsoft Form. Tell us what features you want most.</p></div></div>
+</div></section>
+
+<footer><div class="wrap">MacVault · Anish, Sidharth, Muhammad, Ahmed &amp; Husayn · McMaster University · DeGroote School of Business</div></footer>
+
+<script src="script.js"></script>
+</body></html>
